@@ -1,0 +1,54 @@
+
+{% extends 'common.html' %}
+{% load static %}
+
+{% block head %}
+<title>Rehabilitation-Security</title>
+{% endblock %}
+
+  {% block content %}
+
+<div style="text-align:center;color:white;" >
+   <p><h1>Welcome : {{ user.username }}</h1></p>
+   <br>
+  <p> To control emotions by displaying contents based on the currect emotion. </p>
+  <br>
+    <div class="nav-item active">
+      <a class="nav-link" href="{% url 'manageemotions' %}">
+         <button class="button" style=" background-color: grey; /* Green background */
+         border: 2px solid grey; /* Green border */
+         color: white; /* White text */
+         padding: 32px 16px;
+         cursor: pointer; /* Pointer/hand icon */
+         width: 50%; /* Set a width if needed */
+         font-size: 20px;
+         display: center; /* Make the buttons appear below each other */
+         border-radius: 12px;
+         font-family:Arial;" onmouseover="this.style.opacity=0.5;"onmouseout="this.style.opacity=1;" > <span>
+                Rehabilitation Centre</span>
+         </button>
+      
+      </a>
+  </div>
+  <br>
+  
+ <p> To monitor emotions and alert personal contact at certain emotion for specified time</p><br>
+  <div class="nav-item active">
+    <a class="nav-link" href="{% url 'drugscheck' %}">
+      <button class="button" style=" background-color: grey; /* Green background */
+      border: 2px solid grey; /* Green border */
+      color: white; /* White text */
+      padding: 32px 16px;
+      cursor: pointer; /* Pointer/hand icon */
+      width: 50%; /* Set a width if needed */
+      font-size: 20px;
+      display: center; /* Make the buttons appear below each other */
+      border-radius: 12px;
+      font-family:Arial;"onmouseover="this.style.opacity=0.5;" onmouseout="this.style.opacity=1;" > <span>
+                Security Surveilance</span>
+         </button>
+    </a>
+</div>
+</div>
+
+{% endblock %} 

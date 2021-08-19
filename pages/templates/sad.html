@@ -1,0 +1,43 @@
+
+{% extends 'common.html' %}
+{% load static %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+
+  {% block content %}
+
+<div style="text-align:center;color:white;">
+    <p><h1>Welcome : {{ user.username }}</h1></p>
+    <h1>Current Emotion: Sad</h1>
+    <br>
+    <p> To control emotions by displaying contents based on the currect emotion. </p>
+    <br>
+      <div class="nav-item active">
+        <a class="nav-link" href="{% url 'manageemotions' %}">
+           <button class="button" style=" background-color: grey; /* Green background */
+           border: 2px solid grey; /* Green border */
+           color: white; /* White text */
+           padding: 32px 16px;
+           cursor: pointer; /* Pointer/hand icon */
+           width: 50%; /* Set a width if needed */
+           font-size: 20px;
+           display: center; /* Make the buttons appear below each other */
+           border-radius: 12px;
+           font-family:Arial;" onmouseover="this.style.opacity=0.5;"onmouseout="this.style.opacity=1;" > <span>
+                  Rehabilitation Centre</span>
+           </button>
+        
+        </a>
+      <video  autoplay>
+        <source src="{% static 'videos/video1.mp4' %}" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      </div>
+      
+    
+</div>
+
+{% endblock %} 
