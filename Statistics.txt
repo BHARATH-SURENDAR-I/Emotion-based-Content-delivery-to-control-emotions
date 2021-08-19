@@ -1,0 +1,12 @@
+Last few Emotions Recognized- Respond Immediately if I am in danger:
+neutral
+neutral
+neutral
+neutral
+surprise
+fear
+neutral
+happy
+neutral
+sad
+neutral
